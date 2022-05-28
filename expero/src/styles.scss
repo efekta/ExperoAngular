@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Manrope';
+  src: url('assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+  //font-family: 'Manrope', sans-serif;
+  //font-variation-settings: 'wght' 400;
+  font: 14px/1.2 'Manrope', sans-serif;
+}

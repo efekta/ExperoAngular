@@ -1,0 +1,31 @@
+<div class="card">
+  <div>
+    <picture>
+      <source [srcset]="imgAvifUrl" type="image/avif">
+      <source [srcset]="imgWebpUrl" type="image/webp">
+      <img loading="lazy" [src]="imgPngUrl" alt="Дротаверин">
+    </picture>
+  </div>
+  <div>
+    <div>
+      <h3 class="card__description">{{ card.description }}</h3>
+      <div>
+        <span>28 шт</span>
+        <span>56 шт</span>
+      </div>
+      <span>{{ card.name }}</span>
+      <span>{{ card.manufacturer }}</span>
+      <span>{{ card.country }}</span>
+      <div>
+        <a href="">Все спазмолитические</a>
+        <a href="">С таким же веществом</a>
+      </div>
+    </div>
+
+    <div>
+      <span>83 ₽</span>
+      <button>В корзину</button>
+      <a href="">Купить в 23 аптеках</a>
+    </div>
+  </div>
+</div>
