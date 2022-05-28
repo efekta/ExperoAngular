@@ -13,6 +13,7 @@ export interface Card {
   styleUrls: ['./app.component.scss']
 })
 
+
 export class AppComponent {
   title = 'expero';
 

@@ -7,10 +7,12 @@ import { Card } from '../app.component';
   styleUrls: ['./card.component.scss']
 })
 
+
 export class CardComponent implements OnInit {
-  // TODO: Я не знаю почему без "!" ниче не работает HELP
+  // TODO: Я не знаю почему без "!" ниче не работает - HELP
   // @Input() card: Card
   @Input() card!: Card
+
 
   imgAvifUrl: string = './assets/img/card_1.avif'
   imgWebpUrl: string = './assets/img/card_1.webp'

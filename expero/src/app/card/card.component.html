@@ -8,7 +8,7 @@
   </div>
   <div>
     <div>
-      <h3 class="card__description">{{ card.description }}</h3>
+      <h3 class="card__description">{{ card.description | truncate:[100, '...'] }}</h3>
       <div>
         <span>28 шт</span>
         <span>56 шт</span>
