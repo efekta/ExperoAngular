@@ -32,6 +32,9 @@ export class ProductCardComponent implements OnInit {
   //   this.activeItem = item;
   // }
 
+  //В наличии?
+  // isStock = true
+
 
 
   // TODO: Я не знаю почему без "!" ниче не работает - HELP

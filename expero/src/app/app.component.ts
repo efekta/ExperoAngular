@@ -12,6 +12,8 @@ export interface Card {
   imgPngUrl?: string
   info?: any // TODO:
   pack?: any // TODO:
+  //В наличии?
+  // isStock?: boolean
 }
 
 @Component({
@@ -45,7 +47,9 @@ export class AppComponent {
       imgWebpUrl: './assets/img/card_1.webp',
       imgPngUrl: './assets/img/card_1.png',
       pack: { smallSize: '28 шт', bigSize: '56 шт' },
-      info: { linkAll: 'Все болеутоляющие', linkMore: 'С таким же веществом' }
+      info: { linkAll: 'Все болеутоляющие', linkMore: 'С таким же веществом' },
+      //В наличии?
+      // isStock: true
     },
 
     {
