@@ -64,7 +64,7 @@ export class AppComponent {
       imgWebpUrl: './assets/img/imgnone.webp',
       imgPngUrl: './assets/img/imgnone.png',
       pack: { smallSize: '28 шт', bigSize: '56 шт' },
-      info: { linkAll: 'Все болеутоляющие', linkMore: 'С таким же веществом' }
+      info: { linkAll: 'Все болеутоляющие', linkMore: 'С таким же веществом' },
     },
 
     {
@@ -76,7 +76,7 @@ export class AppComponent {
       count: '28',
       imgAvifUrl: './assets/img/gel.avif',
       imgWebpUrl: './assets/img/gel.webp',
-      imgPngUrl: './assets/img/gel.png'
+      imgPngUrl: './assets/img/gel.png',
     },
   ]
 }

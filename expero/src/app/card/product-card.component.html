@@ -6,10 +6,11 @@
       <img loading="lazy" [src]="card.imgPngUrl" class="card__img" alt="Дротаверин">
     </picture>
   </div>
+
   <div class="card__content">
     <h3 class="card__description">{{ card.description | truncate:[100, '...'] }}</h3>
     <div class="pack">
-      <span class="pack__item">
+      <span class="pack__item active">
         {{ card.pack.smallSize }}
 
       </span>
@@ -38,11 +39,12 @@
       </a>
     </div>
   </div>
+
   <div class="actions">
-    <span class="price">{{ card.price }}</span>
+    <p class="price">{{ card.price }}</p>
     <button class="btn-primary">В корзину</button>
-    <a href="" class="btn-link">
+    <button class="btn-link">
       Купить в <span>{{ card.count }}</span> аптеках
-    </a>
+    </button>
   </div>
 </div>

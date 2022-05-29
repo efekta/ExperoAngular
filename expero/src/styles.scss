@@ -41,7 +41,8 @@ button {
   transition: all .3s ease-in-out;
 }
 
-button:disabled {
+button:disabled,
+button[disabled] {
   cursor: not-allowed;
   pointer-events: all;
 }
@@ -74,11 +75,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
-  //max-width: var(--container-width);
 
   @media(min-width: 1270px) {
     max-width: var(--container-width);
-    //max-width: 1270px;
   }
 }
 
@@ -94,13 +93,36 @@ p, h1, h2, h3, h4, h5, h6 {
   font-variation-settings: 'wght' 600;
   justify-content: center;
   line-height: 20px;
-  padding: 14px 24px;
+  padding: 14px 20px;
   text-align: center;
 
   &:hover {
-    background: transparent;
-    border: 1px solid #309CF4;
-    color: #309CF4;
+    background: #2191ED;
+    border: 1px solid #2191ED;
+  }
+}
+
+.btn-primary:active {
+  background: #2191ED;
+  border: 1px solid #2191ED;
+}
+
+.btn-primary:focus {
+  background: #309CF4;
+  border: 1px solid #309CF4;
+}
+
+.btn-primary:disabled,
+.btn-primary[disabled] {
+  background: #F2F3F5;
+  color: #888A94;
+  cursor: not-allowed;
+  pointer-events: all;
+
+  &:hover {
+    background: #F2F3F5;
+    border: 1px solid #F2F3F5;
+    color: #888A94;
   }
 }
 
@@ -111,23 +133,13 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-
-  &:hover {
-    border-bottom: 1px solid #309CF4;
-  }
 }
 
-
-.btn-primary:disabled,
-.btn-primary[disabled] {
-  background: #F2F3F5;
-  color: #888A94;
-
-  &:hover {
-    background: #F2F3F5;
-    border: 1px solid transparent;
-    color: #888A94;
-  }
+.btn-link:disabled,
+.btn-link[disabled] {
+  color: #E3E3E6;
+  cursor: not-allowed;
+  pointer-events: all;
 }
 
 .svg-icon {
