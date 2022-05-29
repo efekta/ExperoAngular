@@ -1,19 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Expero</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <symbol id="arrow-left" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.16666 9.16667H14.0542L11.0267 5.53334C10.7317 5.18001 10.78 4.65417 11.1333 4.36001C11.4875 4.06501 12.0125 4.11334 12.3067 4.46667L16.4733 9.46667C16.5058 9.50584 16.5225 9.55167 16.5467 9.59501C16.5667 9.63001 16.5908 9.66001 16.6058 9.69834C16.6433 9.79417 16.6658 9.89501 16.6658 9.99667C16.6658 9.99751 16.6667 9.99917 16.6667 10C16.6667 10.0008 16.6658 10.0025 16.6658 10.0033C16.6658 10.105 16.6433 10.2058 16.6058 10.3017C16.5908 10.34 16.5667 10.37 16.5467 10.405C16.5225 10.4483 16.5058 10.4942 16.4733 10.5333L12.3067 15.5333C12.1417 15.7308 11.905 15.8333 11.6667 15.8333C11.4783 15.8333 11.2892 15.77 11.1333 15.64C10.78 15.3458 10.7317 14.82 11.0267 14.4667L14.0542 10.8333H4.16666C3.70666 10.8333 3.33332 10.46 3.33332 10C3.33332 9.54001 3.70666 9.16667 4.16666 9.16667Z"/>
   </symbol>
 </svg>
-
-<app-root></app-root>
-</body>
-</html>

@@ -1,0 +1,11 @@
+.card-list {
+  background: #F7F9FC;
+  border: 1px dashed #7B61FF;
+  border-radius: 5px;
+  padding: 0 20px;
+
+  @media(min-width: 1270px) {
+    width: 995px;
+  }
+}
+

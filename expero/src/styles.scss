@@ -4,8 +4,119 @@
   src: url('assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
 }
 
+:root {
+  // base
+  --font-family: "Lato", sans-serif;
+  --content-width: 1270px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
-  //font-family: 'Manrope', sans-serif;
-  //font-variation-settings: 'wght' 400;
+  box-sizing: border-box;
+  font-variation-settings: 'wght' 400;
   font: 14px/1.2 'Manrope', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  padding: 0;
+  transition: all .3s ease-in-out;
+}
+
+image {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-variation-settings: 'wght' 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #309CF4;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.app {
+  background: #F7F9FC;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  //max-width: var(--container-width);
+
+  @media(min-width: 1270px) {
+    max-width: var(--container-width);
+    //max-width: 1270px;
+  }
+}
+
+.btn-primary {
+  align-items: center;
+  background: #309CF4;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-variation-settings: 'wght' 600;
+  justify-content: center;
+  line-height: 20px;
+  padding: 14px 24px;
+  text-align: center;
+
+  &:hover {
+    background: transparent;
+    border: 1px solid #309CF4;
+    color: #309CF4;
+  }
+}
+
+.btn-link {
+  border-bottom: 1px solid transparent;
+  color: #309CF4;
+  font-variation-settings: 'wght' 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  &:hover {
+    border-bottom: 1px solid #309CF4;
+  }
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
