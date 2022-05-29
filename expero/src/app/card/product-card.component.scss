@@ -11,6 +11,13 @@
     margin: 84px 0;
   }
 
+  &__name {
+    color: #63646A;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+
   &__description {
     color: #333333;
     font-variation-settings: 'wght' 600;
@@ -22,7 +29,6 @@
   &__picture {
     align-items: center;
     display: flex;
-    justify-content: center;
   }
 
   &__img {
@@ -32,7 +38,7 @@
 }
 
 
-.packing {
+.pack {
   align-items: center;
   display: flex;
   gap: 10px;
@@ -65,6 +71,7 @@
   }
 }
 
+
 .production {
   margin-bottom: 16px;
 
@@ -73,6 +80,7 @@
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 6px;
+    margin-left: 3px;
   }
 }
 

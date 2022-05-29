@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CardComponent } from "./card/card.component";
+import { ProductCardComponent } from "./card/product-card.component";
 
 @Pipe({
   name: 'truncate'
@@ -21,7 +21,7 @@ export class TruncatePipe implements PipeTransform {
 @NgModule({
     declarations: [
         AppComponent,
-        CardComponent,
+        ProductCardComponent,
         TruncatePipe
     ],
   imports: [

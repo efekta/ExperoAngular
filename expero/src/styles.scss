@@ -41,10 +41,15 @@ button {
   transition: all .3s ease-in-out;
 }
 
-image {
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all;
+}
+
+img {
   height: auto;
   max-width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 a {
@@ -109,6 +114,19 @@ p, h1, h2, h3, h4, h5, h6 {
 
   &:hover {
     border-bottom: 1px solid #309CF4;
+  }
+}
+
+
+.btn-primary:disabled,
+.btn-primary[disabled] {
+  background: #F2F3F5;
+  color: #888A94;
+
+  &:hover {
+    background: #F2F3F5;
+    border: 1px solid transparent;
+    color: #888A94;
   }
 }
 

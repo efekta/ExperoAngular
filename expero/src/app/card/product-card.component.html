@@ -1,0 +1,48 @@
+<div class="card">
+  <div class="card__picture">
+    <picture>
+      <source [srcset]="card.imgAvifUrl" type="image/avif"class="card__img">
+      <source [srcset]="card.imgWebpUrl" type="image/webp"class="card__img">
+      <img loading="lazy" [src]="card.imgPngUrl" class="card__img" alt="Дротаверин">
+    </picture>
+  </div>
+  <div class="card__content">
+    <h3 class="card__description">{{ card.description | truncate:[100, '...'] }}</h3>
+    <div class="pack">
+      <span class="pack__item">
+        {{ card.pack.smallSize }}
+
+      </span>
+      <span class="pack__item">
+        {{ card.pack.bigSize }}
+
+      </span>
+    </div>
+    <p class="card__name">{{ card.name }}</p>
+    <div class="production">
+      <p class="production__item">{{ card.manufacturer }}</p>
+      <p class="production__item">{{ card.country }}</p>
+    </div>
+    <div class="total" *ngIf>
+      <a href="" class="total__link">
+        {{ card.info.linkAll }}
+        <svg class="svg-icon">
+          <use xlink:href="/assets/img/svg/sprite.svg#arrow-left"></use>
+        </svg>
+      </a>
+      <a href="" class="total__link">
+        {{ card.info.linkMore }}
+        <svg class="svg-icon">
+          <use xlink:href="/assets/img/svg/sprite.svg#arrow-left"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="actions">
+    <span class="price">{{ card.price }}</span>
+    <button class="btn-primary">В корзину</button>
+    <a href="" class="btn-link">
+      Купить в <span>{{ card.count }}</span> аптеках
+    </a>
+  </div>
+</div>
